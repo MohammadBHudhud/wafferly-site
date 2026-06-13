@@ -228,19 +228,6 @@
             >🚀 ابدأي التسوق الآن</a
           >
         </div>
-        <div
-          style="
-            text-align: center;
-            margin: 20px 0;
-            font-size: 16px;
-            color: #555;
-          "
-        >
-          عدد الزوار:
-          <span id="visit-count" style="font-weight: bold; color: #ff3366"
-            >...</span
-          >
-        </div>
       </div>
       ```
     </div>
@@ -251,14 +238,6 @@
         navigator.clipboard.writeText(coupon);
         alert("تم نسخ الكوبون: " + coupon);
       }
-      fetch("https://api.count.get/hit/tawfeers.com//visits")
-        .then((response) => response.json())
-        .then((data) => {
-          document.getElementById("visit-count").innerText = data.value;
-        })
-        .catch((error) => {
-          document.getElementById("visit-count").innerText = error;
-        });
     </script>
   </body>
 </html>
