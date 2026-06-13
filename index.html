@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كوبون خصم شي إن</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #f7f7ff);
+    color: #222;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.card {
+    max-width: 760px;
+    width: 100%;
+    background: white;
+    border-radius: 28px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+    position: relative;
+    overflow: hidden;
+}
+
+.badge {
+    display: inline-block;
+    background: #ffe6ee;
+    color: #e91e63;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.coupon-box {
+    margin: 30px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, #111, #333);
+    border-radius: 22px;
+    color: white;
+}
+
+.coupon-label {
+    font-size: 15px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.coupon-code {
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.copy-btn, .shop-btn {
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 14px;
+    padding: 14px 28px;
+    margin: 7px;
+}
+
+.copy-btn {
+    background: #ff3366;
+    color: white;
+}
+
+.shop-btn {
+    display: inline-block;
+    background: #111;
+    color: white;
+    text-decoration: none;
+}
+
+.sections {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.section {
+    background: #fafafa;
+    border-radius: 18px;
+    padding: 18px;
+    border: 1px solid #eee;
+}
+
+.section h3 {
+    margin-top: 0;
+    color: #e91e63;
+}
+
+.tip {
+    margin-top: 30px;
+    background: #fff8e1;
+    padding: 20px;
+    border-radius: 18px;
+    line-height: 1.8;
+}
+
+.steps {
+    text-align: right;
+    margin-top: 30px;
+    background: #f6f6f6;
+    padding: 22px;
+    border-radius: 18px;
+}
+
+.steps li {
+    margin-bottom: 10px;
+}
+
+.final {
+    margin-top: 35px;
+    padding: 25px;
+    background: #fff0f5;
+    border-radius: 22px;
+}
+
+@media(max-width: 600px) {
+    h1 {
+        font-size: 27px;
+    }
+
+    .coupon-code {
+        font-size: 34px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+    <div class="card">
+
+```
+    <div class="badge">عرض خاص للتسوق من شي إن</div>
+
+    <h1>🔥 لا تكملي طلبك قبل تجربة هذا الكوبون</h1>
+
+    <p class="subtitle">
+        كوبون بسيط يمكنك نسخه واستخدامه عند الدفع على شي إن.
+        جربيه قبل إتمام الطلب، فقد يساعدك على توفير مبلغ إضافي.
+    </p>
+
+    <div class="coupon-box">
+        <div class="coupon-label">كود الخصم الخاص بك</div>
+        <div class="coupon-code" id="coupon">HUDHUD20</div>
+        <button class="copy-btn" onclick="copyCoupon()">📋 نسخ الكود</button>
+        <a class="shop-btn" href="YOUR_AFFILIATE_LINK" target="_blank">🛍️ الذهاب إلى شي إن</a>
+    </div>
+
+    <div class="sections">
+        <div class="section">
+            <h3>👗 أزياء</h3>
+            <p>اكتشفي ملابس يومية، مناسبات، وقطع موسمية.</p>
+        </div>
+
+        <div class="section">
+            <h3>👜 إكسسوارات</h3>
+            <p>حقائب، مجوهرات، نظارات، وإضافات بسيطة للإطلالة.</p>
+        </div>
+
+        <div class="section">
+            <h3>🏠 المنزل</h3>
+            <p>أفكار لطيفة للتنظيم، الديكور، والمطبخ.</p>
+        </div>
+    </div>
+
+    <div class="tip">
+        ⭐ نصيحة سريعة:
+        أضيفي المنتجات التي تريدينها إلى السلة أولاً، ثم جربي الكود عند الدفع.
+        بهذه الطريقة تعرفين مباشرة هل يمكن تطبيق الخصم على طلبك.
+    </div>
+
+    <div class="steps">
+        <h3>طريقة الاستخدام:</h3>
+        <ol>
+            <li>انسخي الكود الظاهر في الأعلى.</li>
+            <li>اضغطي على زر الذهاب إلى شي إن.</li>
+            <li>اختاري المنتجات التي تناسبك.</li>
+            <li>ضعي الكود عند صفحة الدفع.</li>
+        </ol>
+    </div>
+
+    <div class="final">
+        <h2>جاهزة للتسوق؟</h2>
+        <p>الكود أمامك، والرابط جاهز. جربيه قبل إتمام الطلب.</p>
+        <a class="shop-btn" href="YOUR_AFFILIATE_LINK" target="_blank">🚀 ابدأي التسوق الآن</a>
+    </div>
+
+</div>
+```
+
+</div>
+
+<script>
+function copyCoupon() {
+    const coupon = document.getElementById("coupon").innerText;
+    navigator.clipboard.writeText(coupon);
+    alert("تم نسخ الكوبون: " + coupon);
+}
+</script>
+
+</body>
+</html>
