@@ -251,7 +251,7 @@
         navigator.clipboard.writeText(coupon);
         alert("تم نسخ الكوبون: " + coupon);
       }
-      fetch("https://api.count.get/hit/tawfeers.com/visits")
+      fetch("https://api.count.get/hit/tawfeers.com//visits")
         .then((response) => response.json())
         .then((data) => {
           document.getElementById("visit-count").innerText = data.value;
